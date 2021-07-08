@@ -379,9 +379,7 @@ Module Glob
     End Sub
 
     Public Sub initHandlers()
-        ' There's a warning here, and I have no idea how to fix it
-        '   I'll buy you a pizza if you can fix it (I'll paypall you ~7 bucks, that way no weird address transfer)
-        AddHandler globHook.KeyDown, AddressOf keyPressed
+        AddHandler GlobalHook.KeyDown, AddressOf keyPressed
 
         'Added some other shit to here so it can load quicker
         parser2 = New OCR2()
